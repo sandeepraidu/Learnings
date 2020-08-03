@@ -1,1 +1,10 @@
 
+DNS	Domain name Server 	
+A record		A record is the Main DNS Record- has the Address  Domain name -> Ip address.
+NS record 	Name Server Record	Name Server  record -  This is used by top level domain servers like .com to direct traffic to the DNS Server that contacts DNS records
+SOA Record	Start of Authority	Name of the Server that supplied Data for the Zone
+DNS Record	Domain name Server Record	
+		
+Top Level Domain	Domain Names 	.com, .in , .edu
+Domain Regiters	Organizations That Supply 	Godaddy , Amazon etc 
+Alias Record		An ALIAS record is a virtual record type we created to provide CNAME-like behavior on apex domains.For example, if your domain is example.com and you want it to point to a host name like myapp.herokuapp.com, you can’t use a CNAME record, but you can use an ALIAS record. The ALIAS record will automatically resolve your domain to one or more A records at resolution time, and resolvers see your domain simply as if it had A records. C Name has wwww  Alias Records Doenst have WWW.
