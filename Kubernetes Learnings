@@ -20,15 +20,15 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    app: hello-world-rest-api
+    app: hello-world-rest-api              # name of the application 
   name: hello-world-rest-api
   namespace: default
 spec:
-  replicas: 2
+  replicas: 2                                 # always make sure there are two pods running all time
   selector:
     matchLabels:
       app: hello-world-rest-api
-  strategy:
+  strategy:                                        # deployment strategy 
     rollingUpdate:
       maxSurge: 25%
       maxUnavailable: 25%
@@ -38,7 +38,7 @@ spec:
       labels:
         app: hello-world-rest-api
     spec:
-      containers:
+      containers:                                                       # which pod should have which container
       - image: in28min/hello-world-rest-api:0.0.2.RELEASE
         imagePullPolicy: IfNotPresent
         name: hello-world-rest-api
