@@ -8,6 +8,14 @@ https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal
 
 Kubernestes depoyment Example:
 
+
+Kind are of Two Types: Deployment and Service
+Deplolment Has a Name , It tells how many Replicas , It Contains POD infomation like what is the Container , it has a Strategy Deployment Strategy 
+
+Service is Basically : Load Balacancer & Port
+
+
+
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
