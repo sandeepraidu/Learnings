@@ -6,4 +6,13 @@ https://www.youtube.com/watch?v=8kijLg7YRT8
 ![image](https://user-images.githubusercontent.com/48413770/89409272-6d6ef880-d6e7-11ea-9e88-39d90f5c0d09.png)
 
 
+Java Objects
+An object is called an instance of a class. For example, suppose Animal is a class then Cat, Dog, Horse, and so on can be considered as objects of Animal class.
+
+Here is how we can create objects in Java:
+
+className object = new className();
+Here, we are using the constructor className() to create the object. Constructors have the same name as the class and are similar to methods
+
+
 
